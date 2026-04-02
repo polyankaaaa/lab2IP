@@ -12,7 +12,7 @@ std::unique_ptr<IGraphStorage> make_storage(Graph::Backend backend) {
     }
     return std::make_unique<AdjacencyListStorage>();
 }
-}  // namespace
+}  
 
 std::unique_ptr<IGraphStorage> AdjacencyListStorage::clone() const {
     return std::make_unique<AdjacencyListStorage>(*this);
