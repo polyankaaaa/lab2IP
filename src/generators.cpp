@@ -14,7 +14,7 @@ Graph make_n(std::size_t n) {
     for (std::size_t i = 0; i < n; ++i) g.add_vertex();
     return g;
 }
-}  // namespace
+}  
 
 Graph GraphGenerator::complete_graph(std::size_t n) {
     Graph g = make_n(n);
